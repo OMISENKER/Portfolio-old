@@ -1,5 +1,6 @@
 html{
     height: 500%;
+    background-image: linear-gradient(to right, rgb(215, 219, 255), rgb(77, 116, 255));
 }
 
 #bg-image{
@@ -10,7 +11,7 @@ html{
     height: auto;
 }
 
-h1{
+#heading-name{
     font-size: 64px;
     font-family: 'Anton', sans-serif;
     color: darkslategrey;
@@ -23,11 +24,11 @@ h1{
     text-shadow: 2px 2px 5px slategrey;
 }
 
-h1:hover{
+#heading-name:hover{
     color: white;
 }
 
-h2{
+#heading-intro{
     font-size: 50px;
     font-family: 'Tilt Neon', cursive;
     color: white;
@@ -39,7 +40,7 @@ h2{
     text-shadow: 2px 2px 5px slategrey;
 }
 
-h2:hover{
+#heading-intro:hover{
     color: darkslategrey;
 }
 
@@ -86,5 +87,73 @@ h2:hover{
 }
 
 /*Plant pot hover effects */
+.first-pot-hidden{
+    display: none;
+    position: absolute;
+    height: 130px;
+    width: 230px;
+    top: 300px;
+    left: 150px;
+    background-color: yellow;
+    z-index: 20;
+}
 
+/*Technologies*/
+#technologies{
+    position: absolute;
+    top: 150%;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+}
 
+#technologies img{
+    height: 100px;
+    width: 100px;
+}
+
+/*Friend Table*/
+#friend-table{
+    position: absolute;
+    top: 170%;
+    left: 22.5%;
+    height: auto;
+    width: 55%;
+    padding: 5px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(237, 242, 255);
+    border-radius: 25px;
+}
+
+#friend-table caption{
+    font-size: 64px;
+    color: cornflowerblue;
+    font-family: 'Anton', sans-serif;
+}
+
+#friend-table table{
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    font-size: 22px;
+    font-family: 'Roboto', serif;
+    font-weight: 700;
+    border: 1px solid rgb(114, 21, 254);
+    border-radius: 20px;
+    color: #29abe9;
+}
+
+#friend-table table th{
+    font-size: 24px;
+    font-family: 'Roboto', serif;
+    font-weight: 900;
+    color: #2389b9;
+}
+
+#friend-table table tr{
+    border: 5px solid rgb(114, 21, 254);
+    
+}
