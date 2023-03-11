@@ -1,0 +1,90 @@
+html{
+    height: 500%;
+}
+
+#bg-image{
+    position: absolute;
+    top: -450px;
+    left: 0;
+    width: 1280px;
+    height: auto;
+}
+
+h1{
+    font-size: 64px;
+    font-family: 'Anton', sans-serif;
+    color: darkslategrey;
+    line-height: 70px;
+    position: relative;
+    float: right;
+    right: 120px;
+    top: -20px;
+    width: 30%;
+    text-shadow: 2px 2px 5px slategrey;
+}
+
+h1:hover{
+    color: white;
+}
+
+h2{
+    font-size: 50px;
+    font-family: 'Tilt Neon', cursive;
+    color: white;
+    position: absolute;
+    margin: 0;
+    right: 250px;
+    top: 250px;
+    width: 20%;
+    text-shadow: 2px 2px 5px slategrey;
+}
+
+h2:hover{
+    color: darkslategrey;
+}
+
+#contact-bar{
+    position: fixed;
+    float: right;
+    top: 50px;
+    right: -70px;
+    height: 150px;
+    width: 100px;
+    text-align: left;
+    font-family: 'Roboto', serif;
+    padding-left: 12px;
+    color: white;
+    background-color: rgb(41, 41, 41);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#contact-bar a i{
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#contact-bar:hover{
+    background-color: darkslategrey;
+    right: -40px;
+}
+
+#flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.rotated-text{
+    position: relative;
+    top: -90px;
+    transform: rotate(-90deg);
+}
+
+#hover-icon-1:hover{
+    font-size: 30px;
+}
+
+/*Plant pot hover effects */
+
+
