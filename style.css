@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html{
     height: 500%;
     background-image: linear-gradient(to right, rgb(215, 219, 255), rgb(77, 116, 255));
@@ -122,4 +127,12 @@ html{
     width: auto;
     border-radius: 1rem;
     transform: rotate(-5deg);
+}
+
+#short-text{
+    padding-left: 20rem;
+}
+
+#short-text p{
+    font-size: large;
 }
