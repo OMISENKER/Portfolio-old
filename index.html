@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,38 +9,44 @@
     <link rel="stylesheet" href="output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
     <script defer src="https://kit.fontawesome.com/9d939bf731.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
+
 </head>
+
 <body>
     <img src="resources/bg-img.jpg" id="bg-image" alt="">
 
-    <h1 id="heading-name">Hi! I'm Dominique Eclavia,</h1>
-    <h2 id="heading-intro">I am a <br><b> Front-End </b> Website Developer.</h2>
+    <h1 id="heading-name" class="logo-hidden">Hi! I'm Dominique Eclavia,</h1>
+    <h2 id="heading-intro" class="logo-hidden">I am a <br><b> Front-End </b> Website Developer.</h2>
 
     <!--Side contact bar-->
-    <div id="contact-bar">
+    <section id="contact-bar">
         <div id="flex-container">
-            <a href="https://www.facebook.com/DominiqueAlvarezEclavia" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" id="hover-icon-1"></i></a>
-            <a href="https://github.com/OMISENKER" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" id="hover-icon-1"></i></a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dominiqueeclavia@proton.me&su=Let's Connect&body=&" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope" id="hover-icon-1"></i></a>
+            <a href="https://www.facebook.com/DominiqueAlvarezEclavia" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-facebook" id="hover-icon-1"></i></a>
+            <a href="https://github.com/OMISENKER" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"
+                    id="hover-icon-1"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dominiqueeclavia@proton.me&su=Let's Connect&body=&"
+                target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope" id="hover-icon-1"></i></a>
         </div>
-    </div>
+    </section>
 
     <!--Technologies-->
 
-    <div id="technologies">
-        <img src="resources/html-icon.png" alt="HTML5">
-        <img src="resources/css-icon.png" alt="CSS3">
-        <img src="resources/tailwind-icon.png" alt="TailwindCSS">
-        <img src="resources/js-icon.png" alt="JS">
-        <img src="resources/react-icon.png" alt="ReactJS">
-    </div>
+    <section id="technologies">
+        <img src="resources/html-icon.png" alt="HTML5" class="technology-logo logo-hidden">
+        <img src="resources/css-icon.png" alt="CSS3" class="technology-logo logo-hidden">
+        <img src="resources/tailwind-icon.png" alt="TailwindCSS" class=" technology-logo logo-hidden">
+        <img src="resources/js-icon.png" alt="JS" class="technology-logo logo-hidden">
+        <img src="resources/react-icon.png" alt="ReactJS" class="technology-logo logo-hidden">
+    </section>
 
 
     <!--Info about me-->
-    <div id="short-intro">
+    <section id="short-intro">
         <section>
             <img src="resources/portrait-1.jpg" alt="portrait-1" id="picture-stack-1" class="img-order-1">
             <img src="resources/portrait-2.jpg" alt="portrait-2" id="picture-stack-2" class="img-order-2">
@@ -47,18 +54,83 @@
             <img src="resources/portrait-4.jpg" alt="portrait-4" id="picture-stack-4" class="img-order-4">
         </section>
         <section id="short-text">
-            <p class="pt-5">
+            <p class="pt-8">
                 I am an enthusiastic Front-end Webstite Developer based in the Philippines.
-                I have a strong passion for creating visually appealing and user-friendly websites that provide an enjoyable browsing experience for users. 
+                I have a strong passion for creating visually appealing and user-friendly websites that provide an
+                enjoyable browsing experience for users.
                 <br><br>
-                I look forward to connecting with you.
-                <br><br>
-                -Dominique 
+                <b>I look forward to connecting with you.</b>
             </p>
         </section>
         <img src="resources/ph-map.png" alt="" class="absolute h-32 left-[90%] top-[70%] ">
-    </div>
+    </section>
 
-    
+    <!--Softskill typing with bg Blob effect-->
+    <section>
+    <section>
+        <p>
+            
+        </p>
+    </section>
+    <section id="my-sofskills" class="absolute flex justify-center items-center h-[400px] w-screen top-[275vh] ">
+        <div id="blob" class="absolute flex justify-center items-center w-[100%] h-[100%] overflow-x-visible">
+            <svg viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg" width="800" id="blobSvg">
+                <defs>
+                    <linearGradient id="gradient" gradientTransform="rotate(255 .5 .5)">
+                        <stop offset="0%" stop-color="#03045e" />
+                        <stop offset="100%" stop-color="#03045f" />
+                    </linearGradient>
+                </defs>
+                        <path fill="url(#gradient)">
+                            <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                            values="M82.5, 71.5Q75, 93, 51,91.5Q27, 90, 14, 70Q1, 50, 14,30.5Q27, 11, 50.5, 9.5Q74, 8,82, 29Q90, 50, 82.5, 71.5Z;
+                            
+                            M80, 63.5Q65, 77, 48.5, 79.5Q32, 82, 19, 66Q6, 50, 18.5, 34Q31, 18, 52, 14Q73, 10, 84, 30Q95, 50, 80, 63.5Z;
+
+                            M77.5, 70.5Q74, 91, 50.5, 90Q27, 89, 15, 69.5Q3, 50, 15.5, 31Q28, 12, 47, 17.5Q66, 23, 73.5, 36.5Q81, 50, 77.5, 70.5Z;
+
+                            M78, 67Q70, 84, 51, 82Q32, 80, 21, 65Q10, 50, 22, 36Q34, 22, 52, 18.5Q70, 15, 78, 32.5Q86, 50, 78, 67Z;
+                            
+                            M82.5, 71.5Q75, 93, 51, 91.5Q27, 90, 14, 70Q1, 50, 14, 30.5Q27, 11, 50.5, 9.5Q74, 8, 82, 29Q90, 50, 82.5, 71.5Z">
+
+                            </animate>
+                        </path>
+            </svg>
+
+        </div>
+    </section>
+    <section id="my-sofskills" class="absolute flex justify-center items-center h-[400px] w-screen top-[275vh] ">
+        <div id="blob" class="absolute flex justify-center items-center w-[100%] h-[100%] blur-2xl">
+            <svg viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg" width="800" id="blobSvg">
+                <defs>
+                    <linearGradient id="gradient" gradientTransform="rotate(255 .5 .5)">
+                        <stop offset="0%" stop-color="#fe00f2" />
+                        <stop offset="100%" stop-color="#fb0280" />
+                    </linearGradient>
+                </defs>
+                        <path fill="url(#gradient)">
+                            <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                            values="M82.5, 71.5Q75, 93, 51,91.5Q27, 90, 14, 70Q1, 50, 14,30.5Q27, 11, 50.5, 9.5Q74, 8,82, 29Q90, 50, 82.5, 71.5Z;
+                            
+                            M80, 63.5Q65, 77, 48.5, 79.5Q32, 82, 19, 66Q6, 50, 18.5, 34Q31, 18, 52, 14Q73, 10, 84, 30Q95, 50, 80, 63.5Z;
+
+                            M77.5, 70.5Q74, 91, 50.5, 90Q27, 89, 15, 69.5Q3, 50, 15.5, 31Q28, 12, 47, 17.5Q66, 23, 73.5, 36.5Q81, 50, 77.5, 70.5Z;
+
+                            M78, 67Q70, 84, 51, 82Q32, 80, 21, 65Q10, 50, 22, 36Q34, 22, 52, 18.5Q70, 15, 78, 32.5Q86, 50, 78, 67Z;
+                            
+                            M82.5, 71.5Q75, 93, 51, 91.5Q27, 90, 14, 70Q1, 50, 14, 30.5Q27, 11, 50.5, 9.5Q74, 8, 82, 29Q90, 50, 82.5, 71.5Z">
+
+                            </animate>
+                        </path>
+            </svg>
+
+        </div>
+    </section>
+
+    </section>
+
 </body>
+
 </html>

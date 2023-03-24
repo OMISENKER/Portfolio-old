@@ -3,6 +3,19 @@ const img2 = document.getElementById("picture-stack-2");
 const img3 = document.getElementById("picture-stack-3");
 const img4 = document.getElementById("picture-stack-4");
 
+//intersection observer
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('logo-show');
+        }
+    })
+});
+
+const hiddenElements = document.querySelectorAll('.logo-hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+//Looping image stack
 setInterval(loopingImageStack, 2000);
 
 function loopingImageStack(){
@@ -74,3 +87,8 @@ function loopingImageStack4(){
     img1.classList.remove('img-order-2');
     img1.classList.add('img-order-1'); 
 }
+
+var typed = new Typed('.element', {
+    strings: ["First sentence.", "Second sentence."],
+    typeSpeed: 30
+  });

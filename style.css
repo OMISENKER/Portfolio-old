@@ -4,8 +4,8 @@
 
 
 html{
-    height: 500%;
-    background-image: linear-gradient(to right, rgb(215, 219, 255), rgb(77, 116, 255));
+    height: 700vh;
+    background-image: linear-gradient(160deg, rgb(67, 164, 255), rgb(77, 116, 255), rgb(140, 0, 255));
     overflow-x: hidden;
 }
 
@@ -101,12 +101,41 @@ html{
     width: 100px;
 }
 
+.logo-hidden{
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.logo-show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+}
+
+.technology-logo:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.technology-logo:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.technology-logo:nth-child(4){
+    transition-delay: 600ms;
+}
+
+.technology-logo:nth-child(5){
+    transition-delay: 800ms;
+}
+
 /*Short Intro*/
 #short-intro{
     position: absolute;
     top: 175%;
     left: 22.5%;
-    height: 60%;
+    height: 65%;
     width: 55%;
     padding: 5px 20px 20px 20px;
     display: flex;
@@ -120,7 +149,6 @@ html{
     height: 350px;
     width: auto;
     border-radius: 1rem;
-    transform: rotate(-5deg);
     top: 2%;
     left: 2%;
     z-index: 1;
@@ -133,8 +161,7 @@ html{
     height: 150px;
     width: auto;
     border-radius: 5px;
-    transform: rotate(-2deg);
-    top: 60%;
+    top: 56%;
     left: 25%;
     z-index: 2;
 
@@ -146,9 +173,8 @@ html{
     height: 50px;
     width: auto;
     border-radius: 2px;
-    transform: rotate(5deg);
-    top: 90%;
-    left: 35%;
+    top: 83%;
+    left: 38%;
     z-index: 3;
 
     transition: 0.5s;
@@ -159,9 +185,8 @@ html{
     height: 20px;
     width: auto;
     border-radius: 2px;
-    transform: rotate(5deg);
-    top: 98%;
-    left: 38%;
+    top: 91%;
+    left: 42%;
     z-index: 4;
 
     transition: none;
@@ -176,3 +201,5 @@ html{
 #short-text p{
     font-size: large;
 }
+
+
