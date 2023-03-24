@@ -513,6 +513,26 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.left-\[90\%\] {
+  left: 90%;
+}
+
+.top-\[70\%\] {
+  top: 70%;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 html{
   height: 500%;
   background-image: linear-gradient(to right, rgb(215, 219, 255), rgb(77, 116, 255));
@@ -535,7 +555,7 @@ html{
   position: relative;
   float: right;
   right: 120px;
-  top: -20px;
+  top: 20px;
   width: 30%;
   text-shadow: 2px 2px 5px slategrey;
 }
@@ -551,7 +571,7 @@ html{
   position: absolute;
   margin: 0;
   right: 250px;
-  top: 250px;
+  top: 230px;
   width: 20%;
   text-shadow: 2px 2px 5px slategrey;
 }
@@ -564,7 +584,7 @@ html{
   position: fixed;
   float: right;
   top: 50px;
-  right: -70px;
+  right: -60px;
   height: 150px;
   width: 100px;
   text-align: left;
@@ -590,12 +610,6 @@ html{
 #flex-container{
   display: flex;
   flex-direction: column;
-}
-
-.rotated-text{
-  position: relative;
-  top: -90px;
-  transform: rotate(-90deg);
 }
 
 #hover-icon-1:hover{
@@ -624,7 +638,7 @@ html{
   position: absolute;
   top: 175%;
   left: 22.5%;
-  height: auto;
+  height: 60%;
   width: 55%;
   padding: 5px 20px 20px 20px;
   display: flex;
@@ -633,12 +647,52 @@ html{
   border-radius: 25px;
 }
 
-#picture-stacks img{
+.img-order-1{
   position: absolute;
   height: 350px;
   width: auto;
   border-radius: 1rem;
   transform: rotate(-5deg);
+  top: 2%;
+  left: 2%;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.img-order-2{
+  position: absolute;
+  height: 150px;
+  width: auto;
+  border-radius: 5px;
+  transform: rotate(-2deg);
+  top: 60%;
+  left: 25%;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.img-order-3{
+  position: absolute;
+  height: 50px;
+  width: auto;
+  border-radius: 2px;
+  transform: rotate(5deg);
+  top: 90%;
+  left: 35%;
+  z-index: 3;
+  transition: 0.5s;
+}
+
+.img-order-4{
+  position: absolute;
+  height: 20px;
+  width: auto;
+  border-radius: 2px;
+  transform: rotate(5deg);
+  top: 98%;
+  left: 38%;
+  z-index: 4;
+  transition: none;
 }
 
 #short-text{

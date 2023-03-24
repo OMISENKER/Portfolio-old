@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet">
     <script defer src="https://kit.fontawesome.com/9d939bf731.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <img src="resources/bg-img.jpg" id="bg-image" alt="">
@@ -24,7 +25,6 @@
             <a href="https://github.com/OMISENKER" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" id="hover-icon-1"></i></a>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dominiqueeclavia@proton.me&su=Let's Connect&body=&" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope" id="hover-icon-1"></i></a>
         </div>
-        <p class="rotated-text">Let's Connect!</p>
     </div>
 
     <!--Technologies-->
@@ -40,16 +40,23 @@
 
     <!--Info about me-->
     <div id="short-intro">
-        <section id="picture-stacks">
-            <img src="resources/portrait-1.jpg" alt="">
+        <section>
+            <img src="resources/portrait-1.jpg" alt="portrait-1" id="picture-stack-1" class="img-order-1">
+            <img src="resources/portrait-2.jpg" alt="portrait-2" id="picture-stack-2" class="img-order-2">
+            <img src="resources/portrait-3.png" alt="portrait-3" id="picture-stack-3" class="img-order-3">
+            <img src="resources/portrait-4.jpg" alt="portrait-4" id="picture-stack-4" class="img-order-4">
         </section>
         <section id="short-text">
-            <p>
-                Dominique, an enthusiastic Front-end Webstite Developer based in the Philippines.
-                I have a strong passion for creating visually appealing and user-friendly websites that provide an enjoyable browsing experience for users.
-                I enjoy staying up-to-date with the latest web development trends and technologies, and I am always looking for new ways to enhance my skills. I am excited to showcase my work and expertise through this portfolio, and I look forward to connecting with you.
+            <p class="pt-5">
+                I am an enthusiastic Front-end Webstite Developer based in the Philippines.
+                I have a strong passion for creating visually appealing and user-friendly websites that provide an enjoyable browsing experience for users. 
+                <br><br>
+                I look forward to connecting with you.
+                <br><br>
+                -Dominique 
             </p>
         </section>
+        <img src="resources/ph-map.png" alt="" class="absolute h-32 left-[90%] top-[70%] ">
     </div>
 
     
