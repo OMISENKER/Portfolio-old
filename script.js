@@ -4,16 +4,35 @@ const img3 = document.getElementById("picture-stack-3");
 const img4 = document.getElementById("picture-stack-4");
 
 //intersection observer
-const observer = new IntersectionObserver((entries) => {
+const observer1 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting){
             entry.target.classList.add('logo-show');
+        }else{
+            entry.target.classList.remove('logo-show');
         }
     })
 });
 
-const hiddenElements = document.querySelectorAll('.logo-hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+const hiddenElements1 = document.querySelectorAll('.logo-hidden');
+hiddenElements1.forEach((el) => observer1.observe(el));
+
+const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('project-show');
+        }else{
+            entry.target.classList.remove('project-show');
+        }
+    })
+});
+
+const hiddenElements2 = document.querySelectorAll('.project-hidden-left', '.project-hidden-right');
+hiddenElements2.forEach((el) => observer2.observe(el));
+
+const hiddenElements3 = document.querySelectorAll('.project-hidden-right');
+hiddenElements3.forEach((el) => observer2.observe(el));
+
 
 //Looping image stack
 setInterval(loopingImageStack, 2000);
@@ -87,8 +106,3 @@ function loopingImageStack4(){
     img1.classList.remove('img-order-2');
     img1.classList.add('img-order-1'); 
 }
-
-var typed = new Typed('.element', {
-    strings: ["First sentence.", "Second sentence."],
-    typeSpeed: 30
-  });

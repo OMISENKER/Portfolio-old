@@ -19,8 +19,5 @@
   "homepage": "https://github.com/OMISENKER/Portfolio#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.7"
-  },
-  "dependencies": {
-    "typed.js": "^2.0.132"
   }
 }

@@ -20,7 +20,7 @@
     <img src="resources/bg-img.jpg" id="bg-image" alt="">
 
     <h1 id="heading-name" class="logo-hidden">Hi! I'm Dominique Eclavia,</h1>
-    <h2 id="heading-intro" class="logo-hidden">I am a <br><b> Front-End </b> Website Developer.</h2>
+    <h2 id="heading-intro" class="logo-hidden">I am a <br> <span class="typing-animation"></span></h2>
 
     <!--Side contact bar-->
     <section id="contact-bar">
@@ -59,7 +59,7 @@
                 I have a strong passion for creating visually appealing and user-friendly websites that provide an
                 enjoyable browsing experience for users.
                 <br><br>
-                <b>I look forward to connecting with you.</b>
+                <b>I look forward to connect with you.</b>
             </p>
         </section>
         <img src="resources/ph-map.png" alt="" class="absolute h-32 left-[90%] top-[70%] ">
@@ -67,10 +67,9 @@
 
     <!--Softskill typing with bg Blob effect-->
     <section>
-    <section>
-        <p>
-            
-        </p>
+    <section class="absolute flex flex-col justify-center items-center h-11 w-screen top-[295vh]">
+        <p class="text-white text-4xl z-10">I am </p>
+        <span class="typing-animation-2 text-white text-5xl z-10"></span>
     </section>
     <section id="my-sofskills" class="absolute flex justify-center items-center h-[400px] w-screen top-[275vh] ">
         <div id="blob" class="absolute flex justify-center items-center w-[100%] h-[100%] overflow-x-visible">
@@ -130,6 +129,33 @@
     </section>
 
     </section>
+
+    <!--Past Projects-->
+    <section class="absolute h-11 w-screen top-[395vh]">
+        <h1 class="text-4xl text-white text-center p-5">Past Projects:</h1>
+        <section class="flex justify-center items-center flex-wrap gap-10">
+            <img src="resources/project-1.png" alt="project-1" class="project-hidden-left">
+            <img src="resources/project-2.png" alt="project-2" class="project-hidden-left">
+            <img src="resources/project-3.png" alt="project-3" class="project-hidden-right">
+            <img src="resources/project-4.png" alt="project-4" class="project-hidden-right">
+        </section>
+    </section>
+
+
+    <!-- Typing animation using type it -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed('.typing-animation', {
+          strings: ['Front-end Developer.', 'Responsive designer.', 'Creative Builder.'],
+          typeSpeed: 50,
+          loop: true,
+        });
+        let typed2 = new Typed('.typing-animation-2', {
+          strings: ['Data-driven.', 'Attentive to detail.', 'Collaborative.','a Problem-solver.', 'Resourceful.'],
+          typeSpeed: 50,
+          loop: true,
+        });
+      </script>
 
 </body>
 

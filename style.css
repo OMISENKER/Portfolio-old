@@ -4,7 +4,7 @@
 
 
 html{
-    height: 700vh;
+    height: 550vh;
     background-image: linear-gradient(160deg, rgb(67, 164, 255), rgb(77, 116, 255), rgb(140, 0, 255));
     overflow-x: hidden;
 }
@@ -43,6 +43,8 @@ html{
     right: 250px;
     top: 230px;
     width: 20%;
+    overflow-wrap: break-word;
+    height: auto;
     text-shadow: 2px 2px 5px slategrey;
 }
 
@@ -64,6 +66,8 @@ html{
     background-color: rgb(41, 41, 41);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+
+    transition: right 0.3s ease-out;
 }
 
 #contact-bar a i{
@@ -202,4 +206,44 @@ html{
     font-size: large;
 }
 
+/*past projects*/
 
+.project-hidden-left{
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateX(-100%);
+    height: 180px;
+    width: auto;
+    filter: grayscale();
+    transition: transform 1s ease, height 0.3s ease-in, filter 0.3s ease-out;
+}
+
+.project-hidden-right{
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateX(100%);
+    height: 180px;
+    width: auto;
+    filter: grayscale();
+    transition: transform 1s ease, height 0.3s ease-in, filter 0.3s ease-out;
+}
+
+.project-hidden-left:hover{
+    height: 200px;
+    width: auto;
+    filter: none;
+}
+
+.project-hidden-right:hover{
+    height: 200px;
+    width: auto;
+    filter: none;
+}
+
+
+.project-show{
+    opacity: 1;
+    filter: blur(0px);
+    filter: grayscale();
+    transform: translateX(0%);
+}
