@@ -1,55 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
     <script defer src="https://kit.fontawesome.com/9d939bf731.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+
 </head>
+
 <body>
     <img src="resources/bg-img.jpg" id="bg-image" alt="">
 
-    <h1 id="heading-name">Hi! I'm Dominique Eclavia,</h1>
-    <h2 id="heading-intro">I am a <br><b> Front-End </b> Website Developer.</h2>
+    <img src="resources/LOGO TEXT WHITE.png" class="absolute top-3 left-3 h-12 w-auto" alt="">
+
+    <h1 id="heading-name" class="logo-hidden">Hi! I'm Dominique Eclavia,</h1>
+    <h2 id="heading-intro" class="logo-hidden">I am a <br> <span class="typing-animation"></span></h2>
 
     <!--Side contact bar-->
-    <div id="contact-bar">
+    <section id="contact-bar">
         <div id="flex-container">
-            <a href="https://www.facebook.com/DominiqueAlvarezEclavia" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" id="hover-icon-1"></i></a>
-            <a href="https://github.com/OMISENKER" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" id="hover-icon-1"></i></a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dominiqueeclavia@proton.me&su=Let's Connect&body=&" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope" id="hover-icon-1"></i></a>
+            <a href="https://www.facebook.com/DominiqueAlvarezEclavia" target="_blank" rel="noopener noreferrer"><i
+                    class="fa fa-facebook" id="hover-icon-1"></i></a>
+            <a href="https://github.com/OMISENKER" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"
+                    id="hover-icon-1"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dominiqueeclavia@proton.me&su=Let's Connect&body=&"
+                target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope" id="hover-icon-1"></i></a>
         </div>
-        <p class="rotated-text">Let's Connect!</p>
-    </div>
+    </section>
 
     <!--Technologies-->
 
-    <div id="technologies">
-        <img src="resources/html-icon.png" alt="HTML5">
-        <img src="resources/css-icon.png" alt="CSS3">
-        <img src="resources/tailwind-icon.png" alt="TailwindCSS">
-        <img src="resources/js-icon.png" alt="JS">
-        <img src="resources/react-icon.png" alt="ReactJS">
-    </div>
+    <section id="technologies">
+        <img src="resources/html-icon.png" alt="HTML5" class="technology-logo logo-hidden">
+        <img src="resources/css-icon.png" alt="CSS3" class="technology-logo logo-hidden">
+        <img src="resources/tailwind-icon.png" alt="TailwindCSS" class=" technology-logo logo-hidden">
+        <img src="resources/js-icon.png" alt="JS" class="technology-logo logo-hidden">
+        <img src="resources/react-icon.png" alt="ReactJS" class="technology-logo logo-hidden">
+    </section>
 
 
     <!--Info about me-->
-    <div id="short-intro">
-        <section id="picture-stacks">
-            <img src="resources/portrait-1.jpg" alt="">
-        </section>
+    <section id="short-intro">
         <section>
-            <p>
-                Dominique, an enthusiastic Front-end Webstite Developer based in the Philippines who has a hunger for learning and 
+            <img src="resources/portrait-1.jpg" alt="portrait-1" id="picture-stack-1" class="img-order-1">
+            <img src="resources/portrait-2.jpg" alt="portrait-2" id="picture-stack-2" class="img-order-2">
+            <img src="resources/portrait-3.png" alt="portrait-3" id="picture-stack-3" class="img-order-3">
+            <img src="resources/portrait-4.jpg" alt="portrait-4" id="picture-stack-4" class="img-order-4">
+        </section>
+        <section id="short-text">
+            <p class="pt-8">
+                I am an enthusiastic Front-end Webstite Developer based in the Philippines.
+                I have a strong passion for creating visually appealing and user-friendly websites that provide an
+                enjoyable browsing experience for users.
+                <br><br>
+                <b>I look forward to connect with you.</b>
             </p>
         </section>
-    </div>
+        <img src="resources/ph-map.png" alt="" class="absolute h-32 left-[90%] top-[70%] ">
+    </section>
 
-    
+    <!--Softskill typing with bg Blob effect-->
+    <section>
+    <section class="absolute flex flex-col justify-center items-center h-11 w-screen top-[295vh]">
+        <p class="text-white text-4xl z-10">I am </p>
+        <span class="typing-animation-2 text-white text-5xl z-10"></span>
+    </section>
+    <section id="my-sofskills" class="absolute flex justify-center items-center h-[400px] w-screen top-[275vh] ">
+        <div id="blob" class="absolute flex justify-center items-center w-[100%] h-[100%] overflow-x-visible">
+            <svg viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg" width="800" id="blobSvg">
+                <defs>
+                    <linearGradient id="gradient" gradientTransform="rotate(255 .5 .5)">
+                        <stop offset="0%" stop-color="#03045e" />
+                        <stop offset="100%" stop-color="#03045f" />
+                    </linearGradient>
+                </defs>
+                        <path fill="url(#gradient)">
+                            <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                            values="M82.5, 71.5Q75, 93, 51,91.5Q27, 90, 14, 70Q1, 50, 14,30.5Q27, 11, 50.5, 9.5Q74, 8,82, 29Q90, 50, 82.5, 71.5Z;
+                            
+                            M80, 63.5Q65, 77, 48.5, 79.5Q32, 82, 19, 66Q6, 50, 18.5, 34Q31, 18, 52, 14Q73, 10, 84, 30Q95, 50, 80, 63.5Z;
+
+                            M77.5, 70.5Q74, 91, 50.5, 90Q27, 89, 15, 69.5Q3, 50, 15.5, 31Q28, 12, 47, 17.5Q66, 23, 73.5, 36.5Q81, 50, 77.5, 70.5Z;
+
+                            M78, 67Q70, 84, 51, 82Q32, 80, 21, 65Q10, 50, 22, 36Q34, 22, 52, 18.5Q70, 15, 78, 32.5Q86, 50, 78, 67Z;
+                            
+                            M82.5, 71.5Q75, 93, 51, 91.5Q27, 90, 14, 70Q1, 50, 14, 30.5Q27, 11, 50.5, 9.5Q74, 8, 82, 29Q90, 50, 82.5, 71.5Z">
+
+                            </animate>
+                        </path>
+            </svg>
+
+        </div>
+    </section>
+    <section id="my-sofskills" class="absolute flex justify-center items-center h-[400px] w-screen top-[275vh] ">
+        <div id="blob" class="absolute flex justify-center items-center w-[100%] h-[100%] blur-2xl">
+            <svg viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg" width="800" id="blobSvg">
+                <defs>
+                    <linearGradient id="gradient" gradientTransform="rotate(255 .5 .5)">
+                        <stop offset="0%" stop-color="#fe00f2" />
+                        <stop offset="100%" stop-color="#fb0280" />
+                    </linearGradient>
+                </defs>
+                        <path fill="url(#gradient)">
+                            <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                            values="M82.5, 71.5Q75, 93, 51,91.5Q27, 90, 14, 70Q1, 50, 14,30.5Q27, 11, 50.5, 9.5Q74, 8,82, 29Q90, 50, 82.5, 71.5Z;
+                            
+                            M80, 63.5Q65, 77, 48.5, 79.5Q32, 82, 19, 66Q6, 50, 18.5, 34Q31, 18, 52, 14Q73, 10, 84, 30Q95, 50, 80, 63.5Z;
+
+                            M77.5, 70.5Q74, 91, 50.5, 90Q27, 89, 15, 69.5Q3, 50, 15.5, 31Q28, 12, 47, 17.5Q66, 23, 73.5, 36.5Q81, 50, 77.5, 70.5Z;
+
+                            M78, 67Q70, 84, 51, 82Q32, 80, 21, 65Q10, 50, 22, 36Q34, 22, 52, 18.5Q70, 15, 78, 32.5Q86, 50, 78, 67Z;
+                            
+                            M82.5, 71.5Q75, 93, 51, 91.5Q27, 90, 14, 70Q1, 50, 14, 30.5Q27, 11, 50.5, 9.5Q74, 8, 82, 29Q90, 50, 82.5, 71.5Z">
+
+                            </animate>
+                        </path>
+            </svg>
+
+        </div>
+    </section>
+
+    </section>
+
+    <!--Past Projects-->
+    <section class="absolute h-11 w-screen top-[395vh]">
+        <h1 class="text-4xl text-white text-center p-5">Past Projects:</h1>
+        <section class="flex justify-center items-center flex-wrap gap-10">
+            <img src="resources/project-1.png" alt="project-1" class="project-hidden-left">
+            <img src="resources/project-2.png" alt="project-2" class="project-hidden-left">
+            <img src="resources/project-3.png" alt="project-3" class="project-hidden-right">
+            <img src="resources/project-4.png" alt="project-4" class="project-hidden-right">
+        </section>
+    </section>
+
+    <!--Footer Section-->
+    <footer class="absolute flex justify-center items-center top-[517%] h-1/3 w-full bg-slate-900">
+        <img src="resources/LOGO TEXT WHITE.png" class="absolute h-12 w-auto top-5" alt="">
+        <div class="absolute flex justify-center items-center gap-5 top-20">
+            <a href="https://www.facebook.com/DominiqueAlvarezEclavia" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-facebook text-white text-4xl" id="hover-icon-1"></i></a>
+            <a href="https://github.com/OMISENKER" target="_blank" rel="noopener noreferrer"><i class="fa fa-github text-white text-4xl"
+                id="hover-icon-1"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dominiqueeclavia@proton.me&su=Let's Connect&body=&"
+                target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope text-white text-4xl" id="hover-icon-1"></i></a>
+        </div>
+        <p class="absolute text-white top-32">Copyright <i class="fa fa-copyright" style="color: #ffffff;"></i> 2023 OMI DEV</p>
+    </footer>
+
+
+    <!-- Typing animation using type it -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        let typed = new Typed('.typing-animation', {
+          strings: ['Front-end Developer.', 'Responsive designer.', 'Creative Builder.'],
+          typeSpeed: 50,
+          loop: true,
+        });
+        let typed2 = new Typed('.typing-animation-2', {
+          strings: ['Data-driven.', 'Attentive to detail.', 'Collaborative.','a Problem-solver.', 'Resourceful.'],
+          typeSpeed: 50,
+          loop: true,
+        });
+      </script>
+
 </body>
+
 </html>

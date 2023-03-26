@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-old",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i style.css -o output.css",
+    "watch": "tailwindcss -i style.css -o output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OMISENKER/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OMISENKER/Portfolio/issues"
+  },
+  "homepage": "https://github.com/OMISENKER/Portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}
